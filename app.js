@@ -57,10 +57,7 @@ const playRound = function(humanChoice, computerChoice) {
     }
     }
 
-while (roundCounter < 5) {
-    playRound(getComputerChoice(), getHumanChoice())
-    roundCounter ++
-}
+playRound(getHumanChoice(), getComputerChoice())
 
 if (humanScore > computerScore) {
 console.log(`Congratulations Human! You won the game... Your score is: ${humanScore}`)
